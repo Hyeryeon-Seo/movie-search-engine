@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet"> 폰트 -->
+    <!-- <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet"> -->
+    
+    <link rel="stylesheet" href="style.css">  <!-- 같은폴더내이면 (혹은_ ./css명-->
+    <title>FYM 핌 │ 인기 영화 검색ㆍ추천</title>
+    <script src="main.js" defer></script> <!--defer? 이게 맞나..그러고보니 웹개발기초강의에서는 같은 html에 그냥 script태그안에 js씀(제이쿼리)-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        } /* 웹개발 강좌때 방법으로 적용됨 */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>F   Y   M</h1> <!--첫 페이지로 링큰 기능 추가해보기-->
+        </header>
+        <form class="search"> 
+            <label id="search-label"><b>Find Your Movies</b></label>
+            <input type="text" id="search-input" placeholder="영화 제목을 검색해 보세요">
+            <button type="submit" id="search-btn" onclick="search()">🔍</button> 
+        </form>
+        <section class="card-list">
+        </section>
+        <footer>
+            <div class="footer-text">
+                <p>주식회사 FYM │ 대표 서혜련</p>
+                <p>Copyright © 2024 by FYM, Inc. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
